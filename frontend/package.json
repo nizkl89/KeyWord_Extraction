@@ -1,0 +1,20 @@
+{
+  "name": "keyword-extraction-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "build:js": "babel src/App.jsx -o public/App.js",
+    "build:css": "tailwindcss -i src/index.css -o public/index.css",
+    "build": "npm run build:js && npm run build:css",
+    "start": "http-server public -p 8080"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^3.4.1"
+  }
+}
